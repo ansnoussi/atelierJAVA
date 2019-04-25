@@ -1,13 +1,12 @@
 import java.awt.event.*;
 import java.awt.*;
 import java.io.*;
+
 public class MyActionListenerForOpen2 implements ActionListener{
 MyFrame f;
-
 public MyActionListenerForOpen2(MyFrame f ){
 this.f=f;
 }
-
 public void actionPerformed(ActionEvent e){
 FileDialog fd = new FileDialog(f);
 fd.setVisible(true);
@@ -26,5 +25,4 @@ f.ta2.setText(s);
 }catch (FileNotFoundException e2){System.out.println(e2);}
 catch (IOException e3){System.out.println(e3);}	
 }
-
 }

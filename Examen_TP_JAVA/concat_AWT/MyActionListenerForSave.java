@@ -10,9 +10,6 @@ public void actionPerformed(ActionEvent e){
 MyFileDialog mfd = new MyFileDialog(f);
 mfd.setMode(mfd.getMS());
 mfd.setVisible(true);
-String nomFichier = mfd.getFile();
-String repFichier = mfd.getDirectory();
-String nomComplet = nomFichier + repFichier;
 File file = new File (mfd.getDirectory()+mfd.getFile());
 try
 {

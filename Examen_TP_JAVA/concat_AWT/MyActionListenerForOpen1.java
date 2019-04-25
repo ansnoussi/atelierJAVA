@@ -23,6 +23,6 @@ in.read(data);
 String s=new String (data);
 f.ta1.setText(s);
 }catch (FileNotFoundException e2){System.out.println(e2);}
- catch (IOException e3){System.out.println(e3);}	
+catch (IOException e3){System.out.println(e3);}	
 }
 }

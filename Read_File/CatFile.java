@@ -16,6 +16,14 @@ try{
 	String s = new String(data);
 	System.out.println("le contenur du fichier est: ");
 	System.out.println(s);
+	
+	
+	String finalText = s1 + s2 ;
+	
+	File file = new File("concat.txt");
+    PrintWriter writer = new PrintWriter(file);
+    writer.write(finalText);
+    writer.close();
 
 
 }catch(ArrayIndexOutOfBoundsException e1){

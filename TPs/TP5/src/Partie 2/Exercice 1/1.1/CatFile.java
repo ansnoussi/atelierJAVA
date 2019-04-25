@@ -14,14 +14,14 @@ try{
 	byte data[] = new byte[size];
 	in.read(data);
 	String s = new String(data);
-	System.out.println("le contenur du fichier est: ");
+	System.out.println("le contenu du fichier est: ");
 	System.out.println(s);
 
 
 }catch(ArrayIndexOutOfBoundsException e1){
-	System.out.println("il faur preciser le nom du fichier");
+	System.out.println("il faur préciser le nom du fichier");
 }catch(FileNotFoundException e2){
-	System.out.println("fichier non trouvee");
+	System.out.println("fichier non trouvée");
 }catch(IOException e3){
 	System.out.println("erreur de chargement du fichier");
 }

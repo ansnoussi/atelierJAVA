@@ -1,7 +1,7 @@
 import java.io.* ;
 import java.awt.* ;
 
-public class CatFile {
+public class AppendFile {
 
 public static void main(String args []){
 
@@ -14,14 +14,16 @@ try{
 	byte data[] = new byte[size];
 	in.read(data);
 	String s = new String(data);
-	System.out.println("le contenur du fichier est: ");
-	System.out.println(s);
+	String finalText = s + args[1] ;
+	PrintWriter writer = new PrintWriter(file);
+	writer.write(finalText);
+	writer.close();
 
 
 }catch(ArrayIndexOutOfBoundsException e1){
-	System.out.println("il faur preciser le nom du fichier");
+	System.out.println("il faur préciser le nom du fichier");
 }catch(FileNotFoundException e2){
-	System.out.println("fichier non trouvee");
+	System.out.println("fichier non trouvée");
 }catch(IOException e3){
 	System.out.println("erreur de chargement du fichier");
 }

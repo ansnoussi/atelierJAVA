@@ -34,7 +34,7 @@ try{
 
 
 }catch(FileNotFoundException e2){
-	System.out.println("fichier non trouvee");
+	System.out.println("fichier non trouvée");
 }catch(IOException e3){
 	System.out.println("erreur de chargement du fichier");
 }}}
